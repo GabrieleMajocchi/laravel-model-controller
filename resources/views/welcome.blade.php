@@ -7,7 +7,7 @@
     <div class="movies text-center d-flex justify-content-between flex-wrap">
 
     @foreach ($movies as $movie)
-        <div class="card w-50" style="width: 18rem;">
+        <div class="card" style="width: 35rem; margin-bottom: 2rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{$movie->title}}</h5>
