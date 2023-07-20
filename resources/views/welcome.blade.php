@@ -7,8 +7,8 @@
     <div class="movies text-center d-flex justify-content-between flex-wrap">
 
     @foreach ($movies as $movie)
-        <div class="card" style="width: 35rem; margin-bottom: 2rem;">
-            <img src="..." class="card-img-top" alt="...">
+        <div class="card" style="width: calc(100% / 3 - 15rem); margin: 2rem 7.5rem;">
+            <img src="{{$movie->link}}" class="card-img-top" alt="..." style="width: 100$;">
             <div class="card-body">
                 <h5 class="card-title">{{$movie->title}}</h5>
                 <p class="card-text">Voto: {{$movie->vote}}</p>
